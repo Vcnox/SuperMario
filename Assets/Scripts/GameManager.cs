@@ -30,7 +30,7 @@ public class GameManager : MonoBehaviour
     void Update()
     {
         _currentGameTime += Time.deltaTime;
-   
+        _currentGameTime = Mathf.Round(_currentGameTime * 100) / 100;
     }
     public float GetTime()
     {
