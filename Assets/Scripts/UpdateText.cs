@@ -27,6 +27,9 @@ public class UpdateText : MonoBehaviour
             case InterfaceVariable.TIME:
                 _textComponent.text = "Tiempo:" + GameManager._isntance.GetTime();
                 break;
+           case InterfaceVariable.GOOMBAS:
+                _textComponent.text = "Goomba" + GameManager._isntance.GetGoombaValue();
+                break;
 
 
         }

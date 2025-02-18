@@ -1,3 +1,4 @@
+using Newtonsoft.Json.Linq;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -8,7 +9,7 @@ public class GoombaMovement : MonoBehaviour
     public Transform mario; // Referencia a Mario
     public float speed = 2f; // Velocidad del Goomba
     public float stompThreshold = 0.5f; // Altura desde la que Mario puede destruir al Goomba
-
+    public int value = 1;
     private Rigidbody2D rb;
 
     void Start()
@@ -45,5 +46,5 @@ public class GoombaMovement : MonoBehaviour
             }
         }
     }
-    
+   
 }
